@@ -1,0 +1,221 @@
+\documentclass{article}
+\usepackage{enumitem,amssymb}
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=$\square$}
+\newlist{radio}{itemize}{2}
+\setlist[radio]{label=$\bigcirc$}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+\section*{Questionnaire used in \textit{Survey of Established Practices in the Life Cycle of Domain-Specific Languages}}
+\textbf{\textit{Holger Stadel Borum (7/7/2022)}} \\
+
+This document contains the questionnaire used for the paper \textit{Survey of Established Practices in the Life Cycle of Domain-Specific Languages}. The questionnaire appeared as a Google Forms document.
+
+\section*{[Introduction]}
+
+Many domain-specific languages (DSLs) have been designed, implemented, and maintained since they started to appear in the 1990s. In this survey, we set out to investigate the life-cycle of DSLs after they have made their first appearance. We look for your input that may point other DSL practitioners and academics to best practices and new problems with DSL development, maintainance, and usage. \\
+
+The survey consists of 18 questions and takes approximately 10 to 15 minutes to fill. If you prefer to answer the questions in a free-form text, you may do so and send the answers to hstb@itu.dk.\\
+
+If you have received a mail about multiple DSL projects, please fill out an additional survey for each language. If you have other relevant DSL projects not listed by us in your mail, feel free to fill out additional surveys for said projects. \\
+
+Please indicate if a free text answer contains business-sensitive data (e.g., write "Sensitive:"). Otherwise, we may choose to publish it as a representative answer in an anonymised form. \\
+
+\textbf{(GDPR) I accept that the following data is gathered for the purpose of research at the IT University of Copenhagen. The results may be published in aggregated form along with representative anonomised answers (unless indicated otherwise)}
+
+\begin{checklist}
+  \item Yes
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{What is the name of your DSL?} \\
+\fbox{\begin{minipage}{15em}
+\
+\end{minipage}}
+\vspace{0.5cm}
+
+\textbf{When was the DSL introduced? (Year)} \\
+\fbox{\begin{minipage}{15em}
+\
+\end{minipage}}
+\pagebreak
+
+\textbf{Why was the DSL developed?}
+\begin{checklist}
+  \item To separate business logic from application logic
+  \item To enable domain experts to write business logic
+  \item To improve program conciseness and readability
+  \item To improve program performance
+  \item To improve program correctness
+  \item To improve programmers' efficiency
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{How would you rate the programming experience of the intended users.}
+\begin{radio}
+  \item 1 (No experience)
+  \item 2
+  \item 3
+  \item 4
+  \item 5
+  \item 6
+  \item 7 (Expert experience)
+\end{radio}
+
+\section*{Design and Development}
+
+\textbf{In what setting was the DSL developed?}
+\begin{checklist}
+  \item In-house company development
+  \item Outsourced development
+  \item Industrial consortium development (e.g., a collective effort within an industry)
+  \item Academic development
+  \item Open-source-community development
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{What was the approximate length of the increments used to develop the DSL?}
+\begin{radio}
+  \item 1 month
+  \item 2 months
+  \item 3 months
+  \item 4 months
+  \item 5 months
+  \item 6 months
+  \item $>6$ months
+\end{radio}
+\vspace{0.5cm}
+
+\textbf{Which methods were used to evaluate the usability of the DSL during design and development?}
+\begin{checklist}
+  \item Usability tests
+  \item User workshops
+  \item Heuristic evalution
+  \item Expert evaluation
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{How were users involved in the language design?} \\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+\vspace{0.5cm}
+
+
+\textbf{How would you rate the level of user involvement during the language design?}\\
+\begin{radio}
+  \item 1 (No involvement)
+  \item 2
+  \item 3
+  \item 4
+  \item 5
+  \item 6
+  \item 7 (Involvement in all decisions)
+\end{radio}
+\pagebreak
+
+\section*{Launch}
+\textbf{How did you seek to encourage users to use the DSL?}\\
+\begin{checklist}
+  \item An attractive development environment
+  \item Training material
+  \item Comprehensive language documentation
+  \item Help to transition from old solutions into the new language
+  \item Backwards compatibility to old solutions
+  \item Company Policy
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{Do you think these efforts affected the success of the DSL? Why?}\\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+\section*{Life-cycle}
+
+\textbf{What factors have contributed to evolving the DSL after its launch?}\\
+\begin{checklist}
+  \item New areas of application (e.g., the language used to specify bank products now also specifies pension products)
+  \item Changes in the existing application domain (e.g., the language must now ensure specifications remain GDPR compliant)
+  \item Changes in internal technologies (i.e., technologies the DSL interfaces with that are maintained by the DSL implementors.)
+  \item Changes in external technologies (i.e., technologies the DSL interfaces with that are external to the DSL implementors.)
+  \item Changes in implementation technologies
+  \item New user wishes (i.e., users point to aspects of the language that can be improved )
+  \item An agile development process
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{Which changes have been made to the DSL from a user perspective?}\\
+\begin{checklist}
+  \item Addition of new language constructs or syntactic sugar
+  \item Major changes to the general language syntax
+  \item Expanding the application domain of the DSL
+  \item Major revisions of the learning materials
+  \item Major revisions of the documentation
+  \item Major improvements of the development environment
+  \item Major improvements of the language implementation (e.g., responsiveness, execution efficiency, or error messages)
+  \item Breaking updates (i.e., updates that are not backwards compatible)
+  \item Other..
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{Do you think the above changes affected the success of the DSL? Why?}\\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+
+\section*{End of life}
+
+\textbf{When do you consider the DSL to have been phased out of most usages? (Best estimate if in the future)}\\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+\vspace{0.5cm}
+
+\textbf{What was, or will be, the primary reason for the DSL to have been phased out? (Best estimate if in the future)}\\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+\vspace{0.5cm}
+
+\textbf{Looking back, are there any efforts that you would have taken during any of the previous phases? Why did you not take them at the time?}\\
+\fbox{\begin{minipage}{\textwidth}
+\
+\
+\
+\end{minipage}}
+\vspace{0.5cm}
+
+\textbf{May we contact you for clarifications?}\\
+\begin{checklist}
+  \item Yes
+  \item No
+\end{checklist}
+\vspace{0.5cm}
+
+\textbf{May we contact you for a possible 30 minutes interview?}\\
+\begin{checklist}
+  \item Yes
+  \item No
+\end{checklist}
+\vspace{0.5cm}
+
+
+
+\end{document}
